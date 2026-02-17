@@ -18,6 +18,7 @@ import team_7 from '@/assets/about/team_7.png';
 import team_8 from '@/assets/mdManna.png';
 import team_9 from '@/assets/sajal.png';
 import team_10 from '@/assets/sajal.png';
+import team_11 from '@/assets/team_11.jpg';
 // import team_10 from '@/assets/talukder.jpeg';
 
 
@@ -93,13 +94,7 @@ const index = () => {
                         department: ', Development',
                         image: team_3,
                     },
-                    {
-                        id: 4,
-                        name: 'Md Rafiqun Raiyan',
-                        designation: 'Python Developer',
-                        department: ', Development',
-                        image: team_4,
-                    },
+
                     {
                         id: 8,
                         name: 'Md. Manna Mia',
@@ -113,6 +108,28 @@ const index = () => {
                         designation: 'Software Developer',
                         department: ', Human Resource',
                         image: team_9,
+                    },
+                    {
+                        id: 10,
+                        name: 'Talukdar Md Arifuzzaman Shumon',
+                        designation: 'Digital Marketing Executive',
+                        department: ', Human Resource',
+                        image: dummy,
+                    },
+
+                    {
+                        id: 11,
+                        name: 'Sadman Sakib',
+                        designation: 'Frontend Developer',
+                        department: ', Development',
+                        image: team_11,
+                    },
+                    {
+                        id: 4,
+                        name: 'Md Rafiqun Raiyan',
+                        designation: 'Python Developer',
+                        department: ', Development',
+                        image: team_4,
                     },
                     {
                         id: 5,
@@ -131,13 +148,7 @@ const index = () => {
 
 
 
-                    {
-                        id: 10,
-                        name: 'Talukdar Md Arifuzzaman Shumon',
-                        designation: 'Digital Marketing Executive',
-                        department: ', Human Resource',
-                        image: dummy,
-                    },
+
                 ]}
             />
         </>

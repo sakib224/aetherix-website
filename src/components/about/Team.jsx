@@ -30,7 +30,7 @@ function Team({ start_line = '', title = '', title_2 = '', description = '', tea
                         {start_line}
                     </motion.p>
                     <motion.h2
-                        className='text-3xl text-[#475569] font-bold'
+                        className='text-3xl text-[#475569]  font-bold'
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}

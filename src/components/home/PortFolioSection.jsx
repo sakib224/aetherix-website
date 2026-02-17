@@ -12,44 +12,44 @@ export default function PortFolioPage({ main = false }) {
     const [activeTab, setActiveTab] = useState(TabList[0]);
 
     console.log('activeTab', activeTab);
-    
+
 
     const renderTabContent = (activeTab) => {
         return (
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 {main
                     ? activeTab?.projects?.map((project, idx) => (
-                          <FlipCard
-                              key={Math.random()}
-                              imageSrc={project.imageSrc}
-                              title={project.title}
-                              subtitle={project.subtitle}
-                              backContent={project.backContent}
-                              client={project.client}
-                              year={project.year}
-                              technologies={project.technologies}
-                              href={`/portfolio/${project.title
-                                  .toLowerCase()
-                                  .replace(/\s+/g, '-')}`}
-                          />
-                      ))
+                        <FlipCard
+                            key={Math.random()}
+                            imageSrc={project.imageSrc}
+                            title={project.title}
+                            subtitle={project.subtitle}
+                            backContent={project.backContent}
+                            client={project.client}
+                            year={project.year}
+                            technologies={project.technologies}
+                            href={`/portfolio/${project.title
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}`}
+                        />
+                    ))
                     : activeTab?.projects
-                          ?.slice(0, 4)
-                          ?.map((project, idx) => (
-                              <FlipCard
-                                  key={Math.random()}
-                                  imageSrc={project.imageSrc}
-                                  title={project.title}
-                                  subtitle={project.subtitle}
-                                  backContent={project.backContent}
-                                  client={project.client}
-                                  year={project.year}
-                                  technologies={project.technologies}
-                                  href={`/portfolio/${project.title
-                                      .toLowerCase()
-                                      .replace(/\s+/g, '-')}`}
-                              />
-                          ))}
+                        ?.slice(0, 4)
+                        ?.map((project, idx) => (
+                            <FlipCard
+                                key={Math.random()}
+                                imageSrc={project.imageSrc}
+                                title={project.title}
+                                subtitle={project.subtitle}
+                                backContent={project.backContent}
+                                client={project.client}
+                                year={project.year}
+                                technologies={project.technologies}
+                                href={`/portfolio/${project.title
+                                    .toLowerCase()
+                                    .replace(/\s+/g, '-')}`}
+                            />
+                        ))}
             </div>
         );
     };
@@ -57,20 +57,26 @@ export default function PortFolioPage({ main = false }) {
     return (
         <div className='container py-10 md:py-20'>
             {!main && (
-                <div className='flex justify-between items-center gap-2 flex-wrap pb-6'>
-                    <div>
-                        <p className='text-base text-[#9ca3af] uppercase font-semibold'>
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6">
+
+                    <div className="md:max-w-xl">
+                        <p className="text-base text-[#9ca3af] uppercase font-semibold">
                             Portfolio
                         </p>
-                        <h2 className='text-3xl text-[#475569] font-bold mb-2'>Our Portfolio</h2>
+                        <h2 className="text-3xl text-[#475569] font-bold mb-2">
+                            Enterprise Software Solutions Built for Scale
+                        </h2>
                     </div>
-                    <div className='text-slate-600 max-w-2xl text-lg leading-relaxed'>
-                        Explore our portfolio of cutting-edge software solutions that have helped
-                        businesses increase efficiency by 40%, boost revenue by 35%, and enhance
-                        customer satisfaction. Each project represents our commitment to innovation
-                        and measurable results.
+
+                    <div className="text-slate-600 md:max-w-2xl text-lg leading-relaxed">
+                        At Aetherix, we design and engineer high-performance digital platforms for businesses operating at scale.
+                        Our portfolio spans logistics, fintech, healthcare, AI, SaaS, and operations management—delivering secure,
+                        scalable, and future-ready software tailored to complex business needs.
+                        Each solution is built with a focus on long-term maintainability, performance, and measurable business impact.
                     </div>
+
                 </div>
+
             )}
             <div className='flex space-x-4 justify-center items-center'>
                 {TabList?.map((tab, idx) => (
@@ -79,11 +85,10 @@ export default function PortFolioPage({ main = false }) {
                         key={idx}
                         onClick={() => setActiveTab(tab)}
                         className={`py-2 px-4 rounded-md transition-all duration-200 cursor-pointer
-            ${
-                activeTab?.id == tab?.id
-                    ? 'bg-primary text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            }`}
+            ${activeTab?.id == tab?.id
+                                ? 'bg-primary text-white'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            }`}
                     >
                         {tab?.title}
                     </button>
