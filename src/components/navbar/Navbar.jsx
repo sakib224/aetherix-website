@@ -52,7 +52,7 @@ const Navbar = () => {
             >
                 <div className='container'>
                     <div className='flex items-center justify-between h-20'>
-                        <div className='flex-shrink-0 transform transition-transform duration-300 hover:scale-105'>
+                        <div className='flex-shrink-0 transform  transition-transform duration-300 hover:scale-105'>
                             <div className='hidden md:block'>
                                 <Logo />
                             </div>

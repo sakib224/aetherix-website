@@ -120,7 +120,7 @@ const Footer = () => {
                     <SocialMediaIcons />
                 </div>
                 <div className='mt-10 border-t border-white/20 pt-4 text-center text-white/70'>
-                    Copyright © 2025, AETHERIX LLC
+                    Copyright © 2026, AETHERIX LLC
                 </div>
             </div>
         </footer>

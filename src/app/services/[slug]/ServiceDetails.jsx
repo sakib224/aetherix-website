@@ -43,6 +43,7 @@ function ServiceDetails({ service }) {
                                 {service.description}
                             </p>
 
+
                             <div className='flex flex-wrap items-center gap-4 pt-4'>
                                 <Link
                                     href='/contact'
@@ -111,7 +112,7 @@ function ServiceDetails({ service }) {
 
             <div className='container'>
                 <section className='py-20 -mt-20 relative z-10'>
-                    <div className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-6'>
+                    <div className='text-3xl text-black sm:text-4xl lg:text-5xl font-bold mb-6'>
                         Key Features
                     </div>
                     <div className='bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100'>
@@ -145,11 +146,11 @@ function ServiceDetails({ service }) {
 
                 {service.longDescription && (
                     <section className='py-20'>
-                        <div className='max-w-4xl mx-auto space-y-8'>
+                        <div className='max-w-4xl  space-y-8'>
                             {service.longDescription.map((paragraph, index) => (
                                 <p
                                     key={index}
-                                    className='text-xl text-gray-700 leading-relaxed text-center lg:text-left'
+                                    className='text-xl text-gray-700 leading-relaxed text-left'
                                 >
                                     {paragraph}
                                 </p>

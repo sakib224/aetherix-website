@@ -686,7 +686,7 @@ const CareerDetails = ({ jobListings }) => {
                                                 name='fullName'
                                                 value={formData.fullName}
                                                 onChange={handleInputChange}
-                                                className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                className='w-full pl-10 pr-4 text-black py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
                                                 placeholder='John Doe'
                                             />
                                         </div>
@@ -713,7 +713,7 @@ const CareerDetails = ({ jobListings }) => {
                                                 name='email'
                                                 value={formData.email}
                                                 onChange={handleInputChange}
-                                                className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                className='w-full pl-10 pr-4 text-black py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
                                                 placeholder='john@example.com'
                                             />
                                         </div>
@@ -740,7 +740,7 @@ const CareerDetails = ({ jobListings }) => {
                                                 name='phone'
                                                 value={formData.phone}
                                                 onChange={handleInputChange}
-                                                className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                className='w-full pl-10 pr-4 text-black py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
                                                 placeholder='+880 1XXX-XXXXXX'
                                             />
                                         </div>
@@ -833,13 +833,17 @@ const CareerDetails = ({ jobListings }) => {
                                         <button
                                             type="button"
                                             onClick={() => setShowOptionalFields(!showOptionalFields)}
-                                            className="flex items-center justify-center w-8 h-8 rounded-md text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50 transition"
-                                            aria-label="Toggle optional fields"
+                                            className="flex items-center gap-2 px-3 py-1.5 rounded-full 
+             bg-indigo-50 text-indigo-600 text-sm font-medium
+             hover:bg-indigo-100 hover:text-indigo-800 transition"
                                         >
-                                            <span >
-                                                {showOptionalFields ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                                            {showOptionalFields ? "Less options" : "More options"}
 
-                                            </span>
+                                            <ChevronDown
+                                                size={14}
+                                                className={`transition-transform duration-300 ${showOptionalFields ? "rotate-180" : ""
+                                                    }`}
+                                            />
                                         </button>
 
 
@@ -855,18 +859,26 @@ const CareerDetails = ({ jobListings }) => {
                                                 className='space-y-4 overflow-hidden'
                                             >
                                                 <div>
-                                                    <label className='block text-sm font-semibold mb-2 text-gray-700'>
-                                                        Cover Letter
+                                                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                                                        Expected Salary
                                                     </label>
-                                                    <textarea
-                                                        name='coverLetter'
-                                                        value={formData.coverLetter}
-                                                        onChange={handleInputChange}
-                                                        rows='4'
-                                                        className='w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 resize-none'
-                                                        placeholder="Tell us why you're a great fit for this position..."
-                                                    />
+                                                    <div className="relative">
+                                                        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">৳</span>
+                                                        <input
+                                                            type="number"
+                                                            name="expectedSalary"
+                                                            value={formData.expectedSalary}
+                                                            onChange={handleInputChange}
+                                                            placeholder="0"
+                                                            className="w-full text-black pl-8 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl 
+                 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
+                 outline-none transition-all duration-200"
+                                                        />
+                                                    </div>
                                                 </div>
+
+
+
 
                                                 <div>
                                                     <label className='block text-sm font-semibold mb-2 text-gray-700'>
@@ -879,7 +891,7 @@ const CareerDetails = ({ jobListings }) => {
                                                             name='startDate'
                                                             value={formData.startDate}
                                                             onChange={handleInputChange}
-                                                            className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                            className='w-full text-black pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
                                                         />
                                                     </div>
                                                 </div>
@@ -895,7 +907,7 @@ const CareerDetails = ({ jobListings }) => {
                                                             name='portfolio'
                                                             value={formData.portfolio}
                                                             onChange={handleInputChange}
-                                                            className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                            className='w-full pl-10 pr-4 text-black py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
                                                             placeholder='https://yourportfolio.com'
                                                         />
                                                     </div>
@@ -912,7 +924,7 @@ const CareerDetails = ({ jobListings }) => {
                                                             name='linkedIn'
                                                             value={formData.linkedIn}
                                                             onChange={handleInputChange}
-                                                            className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200'
+                                                            className='w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black focus:border-blue-500 outline-none transition-all duration-200'
                                                             placeholder='https://linkedin.com/in/yourprofile'
                                                         />
                                                     </div>
