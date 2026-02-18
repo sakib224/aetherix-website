@@ -110,21 +110,12 @@ export default [
                 project_6_3
             ],
             title: 'IAATO',
-            subtitle: 'Options Trading Mentorship Web & Mobile Platform',
+            subtitle: 'Trading Mentorship & Community Platform',
             backContent:
-                `Built a cross-platform web and mobile app for an Options Trading Mentorship program serving 4,000+ users. Features include real-time alerts, subscription billing, chat groups, content access, and user dashboards. Integrated with Stripe, PayPal, and WhatsApp for seamless payments and support.
-
-                Key Features:
-                - Web & mobile responsive interface
-                - Real-time trade alerts & chat rooms
-                - Login via social & email auth
-                - Subscription billing (Stripe, PayPal)
-                - Course & market data access
-                - 7-day trial & plan management
-                - Admin & user dashboards`,
-            technologies: ['ReactNative', 'React', 'Laravel', 'Polygon API', 'Mysql'],
+                `IAATO is a mentorship and community platform designed for options trading networks. It offers real-time alerts, educational resources, subscription management, and collaborative discussion tools—supporting both learning and community engagement at scale.`,
+            technologies: ['React Native', 'React', 'Laravel', 'Mysql'],
             client: 'Industrial Solutions Corp.',
-            year: 2021,
+            year: '2025–2026',
         },
         {
             imageSrc: project_7_1,
@@ -134,21 +125,12 @@ export default [
                 project_7_3
             ],
             title: 'Visual Discovery',
-            subtitle: 'Investor Startup Platform with Video Portfolio Tool',
+            subtitle: 'Founder–Investor Matching Platform',
             backContent:
-                `Designed and developed a multi-role SaaS platform connecting startup founders with investors.
-                Key roles: Admin, Investor, Founder.
-                Key features:
-                • Investor profile setup with thesis, cheque size, preferences
-                • Portfolio upload (local & URL) – video support up to 512MB
-                • Admin dashboard with user, document, and credential management
-                • YouTube OAuth token integration
-                • Founder document submission and profile enrichment
-                • Role-based dashboard views with secure access
-                Enables seamless discovery and engagement between founders and investors.`,
-            technologies: ['Vue.js', 'Laravel', 'Tailwind CSS', 'MySQL', 'YouTube API'],
+                `Visual Discovery connects startup founders with investors through structured profiles, secure document sharing, and video-based pitch portfolios. The platform streamlines early-stage discovery while maintaining data privacy and controlled access.`,
+            technologies: ['Vue.js', 'Laravel', 'MySQL'],
             client: 'Industrial Solutions Corp.',
-            year: 2021,
+            year: 2025,
         },
         {
             imageSrc: project_8_1,
@@ -156,13 +138,13 @@ export default [
                 project_8_1,
                 project_8_2
             ],
-            title: 'NAF Inventory',
-            subtitle: 'Inventory management system',
+            title: 'Lerenjo',
+            subtitle: 'Solar Program Operations Management System',
             backContent:
-                `Inventory management system (IMS) is a software platform that enables businesses to manage their inventory efficiently. The system tracks inventory levels, orders, sales, and deliveries, providing real-time visibility into stock levels and inventory movements.`,
-            technologies: ['React', 'Laravel', 'Bootstrap', 'Mysql'],
+                `Lerenjo is an operations management platform built for large-scale solar initiatives. It tracks applications, approvals, payments, and operational milestones across the full program lifecycle, enabling teams to manage complexity with clarity and precision.`,
+            technologies: [ 'Laravel (Blade)',  'Mysql'],
             client: 'Industrial Solutions Corp.',
-            year: 2021,
+            year: 2025,
         }]
     },
     {

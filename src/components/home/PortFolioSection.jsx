@@ -69,10 +69,9 @@ export default function PortFolioPage({ main = false }) {
                     </div>
 
                     <div className="text-slate-600 md:max-w-2xl text-lg leading-relaxed">
-                        At Aetherix, we design and engineer high-performance digital platforms for businesses operating at scale.
-                        Our portfolio spans logistics, fintech, healthcare, AI, SaaS, and operations management—delivering secure,
-                        scalable, and future-ready software tailored to complex business needs.
+                        At Aetherix, we design and engineer high-performance digital platforms for businesses operating at scale. Our portfolio spans logistics, fintech, healthcare, AI, SaaS, and operations management—delivering secure, scalable, and future-ready software tailored to complex business needs.
                         Each solution is built with a focus on long-term maintainability, performance, and measurable business impact.
+
                     </div>
 
                 </div>
