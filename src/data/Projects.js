@@ -34,11 +34,11 @@ export default [
                 project_1_2,
                 project_1_3
             ],
-            title: 'RoketBus',
-            subtitle: 'Vehicle Scheduling & Ticket-Management',
+            title: 'Rocket Bus',
+            subtitle: 'Fleet Scheduling & Ticketing Software',
             backContent:
-                'RoketBus is an end-to-end fleet scheduling and ticketing dashboard built with Laravel and Vue.js. It enables dynamic seat-layout configuration, automated trip planning with distance/time validation, and QR-driven ticket issuance via counter and ETIM devices. The MySQL-powered backend handles authentication, role-based access, and real-time GPS telemetry, while the Vue.js frontend delivers analytics, revenue summaries, and detailed booking reports. Dockerized for consistent deployment.',
-            technologies: ['Vue.js', 'Laravel', 'Tailwind CSS', 'MySQL'],
+                'Rocket Bus is an enterprise-grade transportation management system built for fleet operators and travel companies. The platform centralizes trip scheduling, seat allocation, ticket issuance, and operational reporting within a single, reliable system. Designed for efficiency and scalability, it helps operators reduce operational overhead and improve service reliability.',
+            technologies: ['Vue.js', 'Laravel',  'MySQL'],
             client: 'Various SMEs',
             year: 2025,
         },
@@ -50,12 +50,12 @@ export default [
                 project_2_3
             ],
             title: 'Courtesy EXP',
-            subtitle: 'Order management with Live driver fleet',
+            subtitle: 'Logistics & Delivery Management Platform',
             backContent:
-                'This system streamlines order management and delivery operations with real-time fleet tracking. It includes an iOS app for drivers with live GPS navigation, order updates, and proof of delivery. Admins can assign orders, track drivers, and access performance reports. Customers track orders in real-time with ETA updates. Built with Laravel, Vue.js, React Native, and integrated with Google Maps/Mapbox for tracking and Firebase for notifications, it ensures efficient logistics management.',
-            technologies: ['ReactNative', 'Vue.js', 'Laravel', 'Mysql'],
+                'Courtesy EXP is a full-scale logistics and order management solution enabling real-time delivery tracking and operational coordination. The platform provides live visibility for administrators, drivers, and customers, ensuring transparency across the entire delivery lifecycle while optimizing logistics workflows.',
+            technologies: ['React Native', 'Vue.js', 'Laravel', 'Mysql','Python'],
             client: 'Retail Group Inc.',
-            year: 2024,
+            year: '2024–2025',
         },
         {
             imageSrc: project_3_1,
@@ -65,19 +65,12 @@ export default [
                 project_3_3
             ],
             title: 'Uplify',
-            subtitle: 'AI-Powered Business Growth Platform for Entrepreneurs',
+            subtitle: 'AI-Powered Business Growth Platform',
             backContent:
-                `Built an interactive coaching platform to guide entrepreneurs through mindset, systems, and marketing mastery. Features include:
-                    • Interactive milestone-based learning paths
-                    • Habit tracking dashboard
-                    • Personalized AI agents (e.g., “Lina”)
-                    • Topic-specific paths: Mindset, Finance, Legal, Hiring, Sales
-                    • Smart assessments & progress tracking
-                    • Seamless UI/UX for daily lesson flows
-                Enabled small business owners to transform goals into profitable systems.`,
-            technologies: ['Python', 'Vue.js', 'Laravel', 'Tailwind CSS', 'MySQL'],
+                `Uplify is an intelligent business development platform designed to support entrepreneurs and growing teams. Through AI-driven coaching, structured learning paths, and habit tracking, the system delivers personalized insights that help users build sustainable, scalable businesses.`,
+            technologies: ['Python', 'Vue.js', 'Laravel', 'MySQL'],
             client: 'Regional Healthcare Network',
-            year: 2024,
+            year: '2024–2026',
         },
         {
             imageSrc: project_4_1,
@@ -87,21 +80,12 @@ export default [
                 project_4_3
             ],
             title: 'Radi8 Health',
-            subtitle: 'Wellness Coaching Web App with Scheduling & Chat',
+            subtitle: 'Digital Wellness & Coaching Platform',
             backContent:
-                `Built a complete wellness coaching web app where users can discover, book, and chat with expert coaches. Key features:
-                    • Coach search by category
-                    • Appointment scheduling with calendar view
-                    • Reschedule & cancel options
-                    • Integrated chat system
-                    • Real-time status tracking (Pending, Scheduled, Paid)
-                    • Coach onboarding & verification
-                    • Secure payment system
-                    • Responsive UI for dashboard, coaches & chats
-                Empowered seamless wellness journeys through expert access.`,
-            technologies: ['React', 'Laravel', 'Google Calande', 'Mysql'],
+                `Radi8 Health is a secure digital platform that connects individuals with professional wellness coaches. The system supports coach discovery, session scheduling, and private communication, enabling a seamless and compliant coaching experience built around trust and accessibility.`,
+            technologies: ['React', 'Laravel',  'Mysql'],
             client: 'Industrial Solutions Corp.',
-            year: 2024,
+            year:  2025,
         },
         {
             imageSrc: project_5_1,
@@ -111,12 +95,12 @@ export default [
                 project_5_3
             ],
             title: 'Boutikio',
-            subtitle: 'Reward Loyalty program with apple and google wallet',
+            subtitle: 'Digital Loyalty & Rewards Platform',
             backContent:
-                `Transform customer engagement strategy with Reward Loyalty. This system allows you to create and manage digital savings cards with ease. Gain complete control over your user base through an intuitive, beautiful interface by using apple and google wallet`,
-            technologies: ['Laravel', 'jQuery', 'Mysql', 'DigitalOcean'],
+                `Boutikio enables businesses to launch and manage digital loyalty programs with wallet-based savings cards. Integrated with Apple Wallet and Google Wallet, the platform helps brands increase retention while providing customers with frictionless access to rewards.`,
+            technologies: ['Laravel', 'jQuery', 'Mysql'],
             client: 'Industrial Solutions Corp.',
-            year: 2021,
+            year: 2024,
         },
         {
             imageSrc: project_6_1,
