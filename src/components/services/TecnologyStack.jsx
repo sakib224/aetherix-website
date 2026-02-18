@@ -24,7 +24,7 @@ function TechnologyStack() {
                 <div className='flex justify-between items-center gap-2 flex-wrap pb-6'>
                     <div>
                         <p className='text-base text-[#9ca3af] uppercase font-semibold'>Global</p>
-                        <h2  className='text-4xl md:text-5xl font-bold text-slate-900 mb-6'>Technology Stack</h2>
+                        <h2  className='text-3xl md:text-5xl font-bold text-slate-600 mb-6'>Technology Stack</h2>
                     </div>
                     <div className='text-slate-600 max-w-2xl text-lg leading-relaxed'>
                         Our highly qualified global team is uniquely qualified to deliver
