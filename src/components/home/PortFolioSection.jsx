@@ -57,21 +57,24 @@ export default function PortFolioPage({ main = false }) {
     return (
         <div className='container py-10 md:py-20'>
             {!main && (
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6">
+                <div className="flex flex-col md:flex-row justify-between items-start gap-8 pb-6">
 
+                    {/* Left Section */}
                     <div className="md:max-w-xl">
-                        <p className="text-base text-[#9ca3af] uppercase font-semibold">
+                        <p className="text-base text-[#9ca3af] uppercase font-semibold tracking-wider">
                             Portfolio
                         </p>
-                        <h2 className="text-3xl text-[#475569] font-bold mb-2">
+                        <h2 className="text-3xl text-[#475569] font-bold leading-tight mt-2">
                             Enterprise Software Solutions Built for Scale
                         </h2>
                     </div>
 
+                    {/* Right Section */}
                     <div className="text-slate-600 md:max-w-2xl text-lg leading-relaxed">
-                        At Aetherix, we design and engineer high-performance digital platforms for businesses operating at scale. Our portfolio spans logistics, fintech, healthcare, AI, SaaS, and operations management—delivering secure, scalable, and future-ready software tailored to complex business needs.
-                        Each solution is built with a focus on long-term maintainability, performance, and measurable business impact.
-
+                        At <span className="font-bold">Aetherix</span>, we design and engineer high-performance digital platforms for businesses operating at scale. Our portfolio spans logistics, fintech, healthcare, AI, SaaS, and operations management—delivering secure, scalable, and future-ready software tailored to complex business needs.
+                        <p className='mt-5'>
+                            Each solution is built with a focus on long-term maintainability, performance, and measurable business impact.
+                        </p>
                     </div>
 
                 </div>
