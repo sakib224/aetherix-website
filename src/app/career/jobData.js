@@ -8,7 +8,7 @@ export const jobListings = [
         type: 'Full-time',
         salary: '80k - 120k BDT',
         postedDate: '12-10-2025',
-        deadline: '12-11-2025',
+        deadline: '30-03-2026', 
         description:
             'We are looking for an experienced Full Stack Developer to join our growing team. You will be responsible for developing and maintaining both client and server software, working with modern technologies and frameworks.',
         responsibilities: [
@@ -44,7 +44,7 @@ export const jobListings = [
         type: 'Full-time',
         salary: '60k - 90k BDT',
         postedDate: '12-10-2025',
-        deadline: '12-11-2025',
+        deadline: '30-03-2026',
         description:
             'We are seeking a Frontend Engineer with strong React and Next.js skills to develop modern web interfaces for our OTT and enterprise projects.',
         responsibilities: [

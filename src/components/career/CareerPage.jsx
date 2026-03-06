@@ -362,14 +362,6 @@ const CareerListingsPage = () => {
                                     <ChevronRight className='absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 rotate-90' />
                                 </div>
 
-                                <motion.button
-                                    className='px-6 py-3.5 bg-gray-900 text-white rounded-xl font-medium hover:bg-gray-800 transition-colors duration-200 flex items-center gap-2'
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <Filter className='w-4 h-4' />
-                                    Filters
-                                </motion.button>
                             </div>
                         </div>
 

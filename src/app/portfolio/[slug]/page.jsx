@@ -406,6 +406,73 @@ const exampleProduct = [
         websiteUrl: 'https://iaato.example.com',
         demoUrl: 'https://demo.iaato.example.com',
     },
+    {
+        id: 6,
+        name: 'Aqua Life',
+        slug: 'aqua-life',
+        description: 'Aquatic life management and marine ecosystem platform',
+        category: 'Marine Tech',
+        tags: ['Aquarium', 'Marine', 'Water Life', 'Ecosystem'],
+        image: RoketBus,
+
+        bannerImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=600&fit=crop',
+        bannerTitle: 'Aqua Life - Smart Marine Ecosystem',
+        bannerSubtitle: 'Advanced aquatic life monitoring and management system',
+
+        bannerImage2: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&h=600&fit=crop',
+        bannerImage3: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1200&h=600&fit=crop',
+
+        problem: 'Aquarium owners and marine parks struggle to monitor water quality, manage aquatic species, and maintain ecosystem balance efficiently.',
+
+        solution: 'Aqua Life provides a complete aquatic ecosystem management platform with water quality monitoring, species tracking, automated alerts, and ecosystem analytics.',
+
+        features: [
+            { title: 'Water Quality Monitoring', description: 'Track pH, temperature, and oxygen levels in real time', icon: 'server' },
+            { title: 'Aquatic Species Tracking', description: 'Manage and monitor fish and marine species', icon: 'performance' },
+            { title: 'Smart Alerts', description: 'Automated alerts when water conditions change', icon: 'mobile' },
+            { title: 'Ecosystem Analytics', description: 'Detailed insights into aquatic ecosystem health', icon: 'api' },
+        ],
+
+        specifications: [
+            {
+                category: 'Impact Metrics',
+                items: [
+                    { percentage: '35% Healthier Ecosystem', description: 'Real-time monitoring improves aquatic life health.' },
+                    { percentage: '40% Less Manual Work', description: 'Automation reduces manual maintenance tasks.' },
+                    { percentage: '20% Cost Reduction', description: 'Efficient water management saves operational costs.' },
+                ]
+            }
+        ],
+
+        techStack: [
+            { name: 'Vue.js', logo: 'https://cdn.worldvectorlogo.com/logos/vue-9.svg', color: 'bg-green-600' },
+            { name: 'Laravel', logo: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg', color: 'bg-red-500' },
+            { name: 'MySQL', logo: 'https://cdn.worldvectorlogo.com/logos/mysql-6.svg', color: 'bg-blue-600' },
+            { name: 'Redis', logo: 'https://cdn.worldvectorlogo.com/logos/redis.svg', color: 'bg-red-500' },
+            { name: 'IoT Sensors', logo: 'https://cdn.worldvectorlogo.com/logos/internet-of-things.svg', color: 'bg-indigo-500' },
+            { name: 'Stripe', logo: 'https://cdn.worldvectorlogo.com/logos/stripe-2.svg', color: 'bg-purple-600' },
+        ],
+
+        impacts: [
+            { percentage: '35%', title: 'Healthier Ecosystem', description: 'Real-time monitoring improves aquatic life health.' },
+            { percentage: '40%', title: 'Less Manual Work', description: 'Automation reduces manual maintenance tasks.' },
+            { percentage: '20%', title: 'Cost Reduction', description: 'Efficient water management saves operational costs.' },
+        ],
+
+        stats: [
+            { icon: 'users', number: '80+', label: 'Aquarium Owners' },
+            { icon: 'download', number: '15K+', label: 'Monitoring Sessions' },
+            { icon: 'trophy', number: '4.8', label: 'User Rating' },
+            { icon: 'globe', number: '20+', label: 'Marine Centers' }
+        ],
+
+        ctaText: 'Trusted by 80+ aquarium and marine centers',
+        client: 'Aquarium Owners & Marine Parks',
+        date: 'September 12, 2023',
+        status: 'Live',
+        websiteUrl: 'https://aqualife.example.com',
+        demoUrl: 'https://demo.aqualife.example.com',
+    },
 
     // 7. Visual Discovery
     {

@@ -98,7 +98,8 @@ const CareerDetails = ({ jobListings }) => {
         seconds: 0,
         total: 0,
     });
-    const jobDetails = jobListings;
+    const jobDetails =
+        jobListings;
     const calculateDeadline = () => {
         const deadlineStr = jobDetails.deadline;
 
@@ -826,18 +827,18 @@ const CareerDetails = ({ jobListings }) => {
                                     </div>
 
                                     <motion.div
-                                        className='pt-4 border-t border-gray-200'
+                                        className="pt-4 border-t border-gray-200"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                     >
                                         <button
                                             type="button"
                                             onClick={() => setShowOptionalFields(!showOptionalFields)}
-                                            className="flex items-center gap-2 px-3 py-1.5 rounded-full 
-             bg-indigo-50 text-indigo-600 text-sm font-medium
-             hover:bg-indigo-100 hover:text-indigo-800 transition"
-                                        >
-                                            {showOptionalFields ? "Less options" : "More options"}
+                                            className="w-full flex items-center justify-center gap-2 px-8 py-2 rounded-full 
+                                            bg-indigo-50 text-indigo-600 text-sm font-medium
+                                            hover:bg-indigo-100 hover:text-indigo-800 transition"
+                                                                                >
+                                            {showOptionalFields ? "Show options Fields" : "Hide options Fields"}
 
                                             <ChevronDown
                                                 size={14}
@@ -845,8 +846,6 @@ const CareerDetails = ({ jobListings }) => {
                                                     }`}
                                             />
                                         </button>
-
-
                                     </motion.div>
 
                                     <AnimatePresence>
@@ -871,8 +870,8 @@ const CareerDetails = ({ jobListings }) => {
                                                             onChange={handleInputChange}
                                                             placeholder="0"
                                                             className="w-full text-black pl-8 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl 
-                 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
-                 outline-none transition-all duration-200"
+                                                        focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
+                                                        outline-none transition-all duration-200"
                                                         />
                                                     </div>
                                                 </div>
