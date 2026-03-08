@@ -838,7 +838,7 @@ const CareerDetails = ({ jobListings }) => {
                                             bg-indigo-50 text-indigo-600 text-sm font-medium
                                             hover:bg-indigo-100 hover:text-indigo-800 transition"
                                                                                 >
-                                            {showOptionalFields ? "Show options Fields" : "Hide options Fields"}
+                                            {showOptionalFields ? " Hide options Fields" : " Show options Fields"}
 
                                             <ChevronDown
                                                 size={14}

@@ -99,13 +99,12 @@ const ClutchReviewsSlider = ({ reviews = DEFAULT_REVIEWS }) => {
                             </span>
                         </div>
                     </motion.div>
-
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className='text-4xl md:text-5xl font-bold text-slate-900 mb-6'
+                        className='text-4xl md:text-3xl  font-bold  text-[#475569] mb-6'
                     >
                         What Our Clients Say
                     </motion.h2>

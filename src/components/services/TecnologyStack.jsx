@@ -17,6 +17,7 @@ function TechnologyStack() {
     if (!technologies || technologies.length === 0) {
         return null;
     }
+    //  className='text-3xl text-[#475569] font-bold mb-2'
 
     return (
         <section className='py-20 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-xl border border-white/20 '>
@@ -24,7 +25,7 @@ function TechnologyStack() {
                 <div className='flex justify-between items-center gap-2 flex-wrap pb-6'>
                     <div>
                         <p className='text-base text-[#9ca3af] uppercase font-semibold'>Global</p>
-                        <h2  className='text-3xl md:text-5xl font-bold text-slate-600 mb-6'>Technology Stack</h2>
+                        <h2  className='text-base md:text-3xl font-bold text-slate-600 mb-6'>Technology Stack</h2>
                     </div>
                     <div className='text-slate-600 max-w-2xl text-lg leading-relaxed'>
                         Our highly qualified global team is uniquely qualified to deliver
