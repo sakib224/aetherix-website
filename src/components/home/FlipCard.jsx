@@ -15,7 +15,7 @@ export default function FlipCard({
     href = '#',
 }) {
     const [isFlipped, setIsFlipped] = useState(false);
-
+    const [isExpanded, setIsExpanded] = useState(false);
     const handleViewDetails = (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -25,9 +25,8 @@ export default function FlipCard({
     return (
         <Link href={href} className='block w-full h-80 group [perspective:1000px]'>
             <div
-                className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${
-                    isFlipped ? '[transform:rotateY(180deg)]' : ''
-                }`}
+                className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''
+                    }`}
             >
                 {/* Front Side */}
                 <div className='absolute w-full h-full backface-hidden rounded-lg overflow-hidden shadow-lg transform group-hover:scale-105 transition-all duration-500'>
@@ -145,23 +144,34 @@ export default function FlipCard({
 
                     {/* Fixed Header */}
                     <div className='p-4 backdrop-blur-sm pt-16'>
-                        <h3 className='text-xl font-bold mb-1'>{title}</h3>
+                        <h3 className='text-xl text-center font-bold mb-1'>{title}</h3>
                         <div className='flex items-center gap-4 text-sm text-gray-300'>
-                            {client && <span>Client: {client}</span>}
                             {year && <span>Year: {year}</span>}
                         </div>
                     </div>
 
                     {/* Scrollable Content */}
                     <div className='flex-grow overflow-y-auto p-4 custom-scrollbar'>
-                        <p className='text-gray-100 leading-relaxed'>{backContent}</p>
+                        <p className='text-gray-100 leading-relaxed'>
+                            {isExpanded ? backContent : backContent.slice(0, 120) + "..."}
+                        </p>
+
+                        <button
+                            onClick={() => setIsExpanded(!isExpanded)}
+                            className='text-indigo-400 text-sm mt-2 hover:underline'
+                        >
+                            {isExpanded ? "Read Less" : "Read More"}
+                        </button>
                     </div>
 
                     {/* Fixed Tech Stack at Bottom */}
                     {technologies.length > 0 && (
                         <div className='p-4 backdrop-blur-sm'>
-                            <h4 className='font-semibold mb-2 text-sm text-gray-300'>TECH STACK</h4>
-                            <div className='flex flex-wrap gap-2'>
+                            <div className='flex items-center gap-2 flex-wrap'>
+                                <h4 className='font-semibold text-sm text-gray-300'>
+                                    TECH STACK 
+                                </h4>
+
                                 {technologies.map((tech, index) => (
                                     <span
                                         key={index}
